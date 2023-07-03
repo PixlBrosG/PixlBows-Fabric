@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "pixlbows:tanzanite"
+    }
+  },
+  "result": {
+    "item": "pixlbows:tanzanite_block"
+  }
+}

@@ -1,4 +1,4 @@
-package dev.pixl.pixlbows.items;
+package dev.pixl.pixlbows.item;
 
 import dev.pixl.pixlbows.PixlBows;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;

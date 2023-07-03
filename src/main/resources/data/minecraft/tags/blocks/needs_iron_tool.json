@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "pixlbows:tanzanite_block",
+    "pixlbows:tanzanite_ore",
+    "pixlbows:deepslate_tanzanite_ore",
+    "pixlbows:netherrack_tanzanite_ore",
+    "pixlbows:endstone_tanzanite_ore"
+  ]
+}

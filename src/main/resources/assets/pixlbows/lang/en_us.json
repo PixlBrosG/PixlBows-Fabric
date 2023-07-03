@@ -1,5 +1,10 @@
 {
+  "itemgroup.pixlbows.tanzanite": "Tanzanite",
   "item.pixlbows.raw_tanzanite": "Raw Tanzanite",
   "item.pixlbows.tanzanite": "Tanzanite",
-  "itemgroup.pixlbows.tanzanite": "Tanzanite Tab"
+  "block.pixlbows.tanzanite_block": "Block of Tanzanite",
+  "block.pixlbows.tanzanite_ore": "Tanzanite Ore",
+  "block.pixlbows.deepslate_tanzanite_ore": "Deepslate Tanzanite Ore",
+  "block.pixlbows.netherrack_tanzanite_ore": "Netherrack Tanzanite Ore",
+  "block.pixlbows.endstone_tanzanite_ore": "Endstone Tanzanite Ore"
 }
