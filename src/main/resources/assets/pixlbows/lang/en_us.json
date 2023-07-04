@@ -1,15 +1,18 @@
 {
   "itemgroup.pixlbows.tanzanite": "Tanzanite",
   "itemgroup.pixlbows.bow": "Bows",
+
   "item.pixlbows.raw_tanzanite": "Raw Tanzanite",
   "item.pixlbows.tanzanite": "Tanzanite",
   "item.pixlbows.eight_ball": "8-Ball",
   "item.pixlbows.explosive_bow": "Explosive Bow",
+
   "block.pixlbows.tanzanite_block": "Block of Tanzanite",
   "block.pixlbows.tanzanite_ore": "Tanzanite Ore",
   "block.pixlbows.deepslate_tanzanite_ore": "Deepslate Tanzanite Ore",
   "block.pixlbows.netherrack_tanzanite_ore": "Netherrack Tanzanite Ore",
   "block.pixlbows.endstone_tanzanite_ore": "Endstone Tanzanite Ore",
+  "block.pixlbows.tanzanite_lamp": "Tanzanite Lamp",
 
   "tooltip.pixlbows.eight_ball.shift": "Right-click for a random number",
   "tooltip.pixlbows.eight_ball": "Press shift for more info"

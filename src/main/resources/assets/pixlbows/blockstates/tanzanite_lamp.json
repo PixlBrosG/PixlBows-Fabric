@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "pixlbows:block/tanzanite_lamp_on" },
+    "lit=false": { "model": "pixlbows:block/tanzanite_lamp_off" }
+  }
+}
