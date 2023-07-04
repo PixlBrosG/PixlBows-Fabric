@@ -51,7 +51,7 @@ public class ExplosiveBowItem extends RangedWeaponItem implements Vanishable
 
 		boolean bl2 = bl && itemStack.isOf(Items.ARROW);
 
-		if (!world.isClient)
+		if (!world.isClient())
 		{
 			int k;
 			int j;

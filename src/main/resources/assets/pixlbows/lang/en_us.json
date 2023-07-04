@@ -9,5 +9,8 @@
   "block.pixlbows.tanzanite_ore": "Tanzanite Ore",
   "block.pixlbows.deepslate_tanzanite_ore": "Deepslate Tanzanite Ore",
   "block.pixlbows.netherrack_tanzanite_ore": "Netherrack Tanzanite Ore",
-  "block.pixlbows.endstone_tanzanite_ore": "Endstone Tanzanite Ore"
+  "block.pixlbows.endstone_tanzanite_ore": "Endstone Tanzanite Ore",
+
+  "tooltip.pixlbows.eight_ball.shift": "Right-click for a random number",
+  "tooltip.pixlbows.eight_ball": "Press shift for more info"
 }
