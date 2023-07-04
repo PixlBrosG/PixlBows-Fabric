@@ -15,6 +15,8 @@ public class ModItemGroups
 {
 	public static final RegistryKey<ItemGroup> TANZANITE = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(PixlBows.MOD_ID, "tanzanite"));
 
+	public static final RegistryKey<ItemGroup> BOW = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(PixlBows.MOD_ID, "bow"));
+
 	public static void registerItemGroups()
 	{
 		PixlBows.LOGGER.debug("Registering Mod Item Groups for " + PixlBows.MOD_ID);
@@ -22,6 +24,11 @@ public class ModItemGroups
 		Registry.register(Registries.ITEM_GROUP, TANZANITE, FabricItemGroup.builder()
 				.icon(() -> new ItemStack(ModItems.TANZANITE))
 				.displayName(Text.translatable("itemgroup.pixlbows.tanzanite"))
+				.build());
+
+		Registry.register(Registries.ITEM_GROUP, BOW, FabricItemGroup.builder()
+				.icon(() -> new ItemStack(ModItems.EXPLOSIVE_BOW))
+				.displayName(Text.translatable("itemgroup.pixlbows.bow"))
 				.build());
 	}
 }

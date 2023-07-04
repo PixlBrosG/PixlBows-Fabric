@@ -1,6 +1,7 @@
 package dev.pixl.pixlbows.block;
 
 import dev.pixl.pixlbows.PixlBows;
+import dev.pixl.pixlbows.block.custom.JumpyBlock;
 import dev.pixl.pixlbows.item.ModItemGroups;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -31,6 +32,9 @@ public class ModBlocks
 	public static final Block ENDSTONE_TANZANITE_ORE = registerBlock("endstone_tanzanite_ore",
 			new Block(FabricBlockSettings.create().solid().strength(4.0f).requiresTool()), ModItemGroups.TANZANITE);
 
+	public static final Block JUMPY_BLOCK = registerBlock("jumpy_block",
+			new JumpyBlock(FabricBlockSettings.create().solid().strength(4.0f).requiresTool()), ModItemGroups.TANZANITE);
+
 	private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> tab)
 	{
 		registerBlockItem(name, block, tab);
@@ -41,9 +45,7 @@ public class ModBlocks
 	{
 		Item item = Registry.register(Registries.ITEM, new Identifier(PixlBows.MOD_ID, name),
 				new BlockItem(block, new FabricItemSettings()));
-
 		ItemGroupEvents.modifyEntriesEvent(tab).register(entries -> entries.add(item));
-
 		return item;
 	}
 
