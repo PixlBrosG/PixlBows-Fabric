@@ -1,6 +1,7 @@
 package dev.pixl.pixlbows.block;
 
 import dev.pixl.pixlbows.PixlBows;
+import dev.pixl.pixlbows.block.custom.EggplantCropBlock;
 import dev.pixl.pixlbows.block.custom.JumpyBlock;
 import dev.pixl.pixlbows.block.custom.TanzaniteLampBlock;
 import dev.pixl.pixlbows.item.ModItemGroups;
@@ -8,6 +9,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -40,9 +42,17 @@ public class ModBlocks
 			new TanzaniteLampBlock(FabricBlockSettings.create().solid().strength(4.0f).requiresTool()
 					.luminance(state -> state.get(TanzaniteLampBlock.LIT) ? 15 : 0)), ModItemGroups.TANZANITE);
 
+	public static final Block EGGPLANT_CROP = registerBlockWithoutItem("eggplant_crop",
+			new EggplantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)), ModItemGroups.TANZANITE);
+
 	private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> tab)
 	{
 		registerBlockItem(name, block, tab);
+		return Registry.register(Registries.BLOCK, new Identifier(PixlBows.MOD_ID, name), block);
+	}
+
+	private static Block registerBlockWithoutItem(String name, Block block, RegistryKey<ItemGroup> tab)
+	{
 		return Registry.register(Registries.BLOCK, new Identifier(PixlBows.MOD_ID, name), block);
 	}
 
