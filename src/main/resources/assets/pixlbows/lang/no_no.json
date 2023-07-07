@@ -21,5 +21,12 @@
   "tooltip.pixlbows.eight_ball.shift": "Høyre-klikk for tilfeldig tall",
   "tooltip.pixlbows.eight_ball": "Trykk skift for mer info",
 
-  "entity.minecraft.villager.jump_master": "Hoppe Mester"
+  "entity.minecraft.villager.jump_master": "Hoppe Mester",
+
+  "painting.pixlbows.sunset.title": "Solnedgang",
+  "painting.pixlbows.sunset.author": "PlatinumG17",
+  "painting.pixlbows.plant.title": "Plante",
+  "painting.pixlbows.plant.author": "PlatinumG17",
+  "painting.pixlbows.wanderer.title": "Vandrer",
+  "painting.pixlbows.wanderer.author": "PlatinumG17"
 }

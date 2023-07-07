@@ -3,6 +3,7 @@ package dev.pixl.pixlbows;
 import dev.pixl.pixlbows.block.ModBlocks;
 import dev.pixl.pixlbows.item.ModItemGroups;
 import dev.pixl.pixlbows.item.ModItems;
+import dev.pixl.pixlbows.painting.ModPaintings;
 import dev.pixl.pixlbows.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 
@@ -23,5 +24,7 @@ public class PixlBows implements ModInitializer
 
         ModVillagers.registerVillagers();
         ModVillagers.registerTrades();
+
+        ModPaintings.registerPaintings();
     }
 }
