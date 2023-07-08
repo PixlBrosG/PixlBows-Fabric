@@ -1,6 +1,7 @@
 package dev.pixl.pixlbows;
 
 import dev.pixl.pixlbows.block.ModBlocks;
+import dev.pixl.pixlbows.event.KeyInputHandler;
 import dev.pixl.pixlbows.item.custom.EightBallItem;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -34,5 +35,7 @@ public class PixlBowsClient implements ClientModInitializer
 		registerEventHandlers();
 
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EGGPLANT_CROP, RenderLayer.getCutout());
+
+		KeyInputHandler.register();
 	}
 }

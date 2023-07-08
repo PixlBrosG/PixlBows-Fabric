@@ -28,5 +28,8 @@
   "painting.pixlbows.plant.title": "Plant",
   "painting.pixlbows.plant.author": "PlatinumG17",
   "painting.pixlbows.wanderer.title": "Wanderer",
-  "painting.pixlbows.wanderer.author": "PlatinumG17"
+  "painting.pixlbows.wanderer.author": "PlatinumG17",
+
+  "key.category.pixlbows.pixlbows": "PixlBows",
+  "key.pixlbows.drink_water": "Drink Water"
 }
