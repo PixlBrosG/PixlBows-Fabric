@@ -4,6 +4,7 @@ import dev.pixl.pixlbows.block.ModBlocks;
 import dev.pixl.pixlbows.item.ModItemGroups;
 import dev.pixl.pixlbows.item.ModItems;
 import dev.pixl.pixlbows.painting.ModPaintings;
+import dev.pixl.pixlbows.util.ModLootTableModifiers;
 import dev.pixl.pixlbows.villager.ModVillagers;
 import dev.pixl.pixlbows.world.feature.ModConfiguredFeatures;
 import dev.pixl.pixlbows.world.gen.ModOreGeneration;
@@ -31,5 +32,7 @@ public class PixlBows implements ModInitializer
         ModPaintings.registerPaintings();
 
         ModWorldGen.generateWorldGen();
+
+        ModLootTableModifiers.modifyLootTables();
     }
 }
