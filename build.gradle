@@ -18,6 +18,8 @@ repositories {
 	// for more information about repositories.
 }
 
+def dataOutput = 'src/main/generated'
+
 loom {
     splitEnvironmentSourceSets()
 
@@ -28,7 +30,21 @@ loom {
         }
     }
 
+	runs {
+		datagen {
+			server()
+
+			name "Data Generation"
+			vmArg "-Dfabric-api.datagen"
+			vmArg "-Dfabric-api.datagen.output-dir=${file(dataOutput)}"
+
+			runDir "build/datagen"
+		}
+	}
+
 }
+
+sourceSets { main { resources { srcDirs += dataOutput } } }
 
 dependencies {
 	// To change the versions see the gradle.properties file

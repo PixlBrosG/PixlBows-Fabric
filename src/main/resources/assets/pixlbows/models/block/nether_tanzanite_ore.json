@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "pixlbows:block/netherrack_tanzanite_ore"
+    "all": "pixlbows:block/nether_tanzanite_ore"
   }
 }

@@ -29,10 +29,10 @@ public class ModBlocks
 	public static final Block DEEPSLATE_TANZANITE_ORE = registerBlock("deepslate_tanzanite_ore",
 			new Block(FabricBlockSettings.create().solid().strength(4.0f).requiresTool()), ModItemGroups.TANZANITE);
 
-	public static final Block NETHERRACK_TANZANITE_ORE = registerBlock("netherrack_tanzanite_ore",
+	public static final Block NETHER_TANZANITE_ORE = registerBlock("nether_tanzanite_ore",
 			new Block(FabricBlockSettings.create().solid().strength(4.0f).requiresTool()), ModItemGroups.TANZANITE);
 
-	public static final Block ENDSTONE_TANZANITE_ORE = registerBlock("endstone_tanzanite_ore",
+	public static final Block END_TANZANITE_ORE = registerBlock("end_tanzanite_ore",
 			new Block(FabricBlockSettings.create().solid().strength(4.0f).requiresTool()), ModItemGroups.TANZANITE);
 
 	public static final Block JUMPY_BLOCK = registerBlock("jumpy_block",
