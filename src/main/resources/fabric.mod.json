@@ -26,7 +26,8 @@
 		]
 	},
 	"mixins": [
-		"pixlbows.mixins.json"
+		"pixlbows.mixins.json",
+		"pixlbows.client.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",

@@ -7,6 +7,7 @@ import dev.pixl.pixlbows.networking.ModMessagesClient;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.Item;
@@ -28,17 +29,16 @@ public class PixlBowsClient implements ClientModInitializer
 					lines.add(Text.translatable("tooltip." + PixlBows.MOD_ID + ".eight_ball").formatted(Formatting.YELLOW));
 			}
 		});
+
+		KeyInputHandler.register();
 	}
 
 	@Override
 	public void onInitializeClient()
 	{
-		registerEventHandlers();
-
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EGGPLANT_CROP, RenderLayer.getCutout());
 
-		KeyInputHandler.register();
-
+		registerEventHandlers();
 		ModMessagesClient.registerPackets();
 	}
 }

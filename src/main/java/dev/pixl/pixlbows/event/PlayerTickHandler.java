@@ -22,12 +22,10 @@ public class PlayerTickHandler implements ServerTickEvents.StartTick
 	{
 		for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList())
 		{
-			if (RANDOM.nextFloat() <= 0.005f)
+			if (!player.isCreative() && RANDOM.nextFloat() <= 0.005f)
 			{
 				IEntityDataSaver dataPlayer = (IEntityDataSaver)player;
 				ThirstData.removeThirst(dataPlayer, 1);
-				player.sendMessage(Text.translatable(MESSAGE_REMOVED_THIRST).fillStyle(
-						Style.EMPTY.withColor(Formatting.RED)));
 			}
 		}
 	}

@@ -16,7 +16,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 
-public class DrinkingC2SPacket
+public class DrinkingPacket
 {
 	private static final String MESSAGE_DRINKING_WATER = "message.pixlbows.drank_water";
 	private static final String MESSAGE_NO_WATER_NEARBY = "message.pixlbows.no_water_nearby";
@@ -28,24 +28,15 @@ public class DrinkingC2SPacket
 		ServerWorld world = player .getServerWorld();
 		if (isWaterAroundPlayer(player, world, 2))
 		{
-			player.sendMessage(Text.translatable(MESSAGE_DRINKING_WATER).fillStyle(
-					Style.EMPTY.withColor(Formatting.DARK_AQUA)), false);
 			world.playSound(null, player.getBlockPos(), SoundEvents.ENTITY_GENERIC_DRINK, SoundCategory.PLAYERS,
 					0.5f, world.random.nextFloat() * 0.1f + 0.9f);
-
 			ThirstData.addThirst((IEntityDataSaver)player, 1);
-			player.sendMessage(Text.literal("Thirst: " +
-					((IEntityDataSaver)player).getPersistentData().getInt("thirst")).fillStyle(
-							Style.EMPTY.withColor(Formatting.AQUA)), true);
 		}
 		else
 		{
 			player.sendMessage(Text.translatable(MESSAGE_NO_WATER_NEARBY).fillStyle(
 					Style.EMPTY.withColor(Formatting.RED)), false);
-
-			player.sendMessage(Text.literal("Thirst: " +
-					((IEntityDataSaver)player).getPersistentData().getInt("thirst")).fillStyle(
-							Style.EMPTY.withColor(Formatting.AQUA)), true);
+			ThirstData.syncThirst(((IEntityDataSaver)player).getPersistentData().getInt("thirst"), player);
 		}
 	}
 

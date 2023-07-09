@@ -8,8 +8,6 @@ import dev.pixl.pixlbows.networking.ModMessagesServer;
 import dev.pixl.pixlbows.painting.ModPaintings;
 import dev.pixl.pixlbows.util.ModLootTableModifiers;
 import dev.pixl.pixlbows.villager.ModVillagers;
-import dev.pixl.pixlbows.world.feature.ModConfiguredFeatures;
-import dev.pixl.pixlbows.world.gen.ModOreGeneration;
 import dev.pixl.pixlbows.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 

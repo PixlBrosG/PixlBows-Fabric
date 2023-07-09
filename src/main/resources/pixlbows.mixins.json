@@ -3,9 +3,7 @@
 	"package": "dev.pixl.pixlbows.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ModEntityDataSaverMixin"
-	],
-	"client": [
+		"ModEntityDataSaverMixin",
 		"PixlBowsMixin"
 	],
 	"injectors": {
