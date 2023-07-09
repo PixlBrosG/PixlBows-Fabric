@@ -2,6 +2,7 @@ package dev.pixl.pixlbows;
 
 import dev.pixl.pixlbows.block.ModBlocks;
 import dev.pixl.pixlbows.event.PlayerTickHandler;
+import dev.pixl.pixlbows.fluid.ModFluids;
 import dev.pixl.pixlbows.item.ModItemGroups;
 import dev.pixl.pixlbows.item.ModItems;
 import dev.pixl.pixlbows.networking.ModMessagesServer;
@@ -26,6 +27,7 @@ public class PixlBows implements ModInitializer
         ModItems.registerModItems();
         ModItemGroups.registerItemGroups();
         ModBlocks.registerModBlocks();
+        ModFluids.register();
 
         ModVillagers.registerVillagers();
         ModVillagers.registerTrades();
