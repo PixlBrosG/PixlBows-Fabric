@@ -1,10 +1,12 @@
 package dev.pixl.pixlbows.event;
 
+import dev.pixl.pixlbows.networking.ModMessagesServer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
-import net.minecraft.text.Text;
 import org.lwjgl.glfw.GLFW;
 
 public class KeyInputHandler
@@ -19,10 +21,7 @@ public class KeyInputHandler
 		ClientTickEvents.END_CLIENT_TICK.register(client ->
 		{
 			if (drinkingKey.wasPressed())
-			{
-				if (client.player != null)
-					client.player.sendMessage(Text.literal("Pressed key '" + drinkingKey.getBoundKeyLocalizedText().getString() + "'"));
-			}
+				ClientPlayNetworking.send(ModMessagesServer.DRINKING_ID, PacketByteBufs.create());
 		});
 	}
 

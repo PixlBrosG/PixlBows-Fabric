@@ -3,6 +3,7 @@ package dev.pixl.pixlbows;
 import dev.pixl.pixlbows.block.ModBlocks;
 import dev.pixl.pixlbows.item.ModItemGroups;
 import dev.pixl.pixlbows.item.ModItems;
+import dev.pixl.pixlbows.networking.ModMessagesServer;
 import dev.pixl.pixlbows.painting.ModPaintings;
 import dev.pixl.pixlbows.util.ModLootTableModifiers;
 import dev.pixl.pixlbows.villager.ModVillagers;
@@ -34,5 +35,7 @@ public class PixlBows implements ModInitializer
         ModWorldGen.generateWorldGen();
 
         ModLootTableModifiers.modifyLootTables();
+
+        ModMessagesServer.registerPackets();
     }
 }

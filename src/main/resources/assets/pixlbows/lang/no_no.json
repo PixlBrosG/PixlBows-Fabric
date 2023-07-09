@@ -31,5 +31,8 @@
   "painting.pixlbows.wanderer.author": "PlatinumG17",
 
   "key.category.pixlbows.pixlbows": "PixlBows",
-  "key.pixlbows.drink_water": "Drikk Vann"
+  "key.pixlbows.drink_water": "Drikk vann",
+
+  "message.pixlbows.drank_water": "Drakk vann!",
+  "message.pixlbows.no_water_nearby": "Ingen vann i nærheten!"
 }
