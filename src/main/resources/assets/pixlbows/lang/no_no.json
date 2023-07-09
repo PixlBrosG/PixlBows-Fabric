@@ -34,5 +34,6 @@
   "key.pixlbows.drink_water": "Drikk vann",
 
   "message.pixlbows.drank_water": "Drakk vann!",
-  "message.pixlbows.no_water_nearby": "Ingen vann i nærheten!"
+  "message.pixlbows.no_water_nearby": "Ingen vann i nærheten!",
+  "message.pixlbows.removed_thirst": "Fjernet tørst"
 }

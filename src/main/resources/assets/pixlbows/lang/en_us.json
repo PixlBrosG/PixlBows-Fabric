@@ -34,5 +34,6 @@
   "key.pixlbows.drink_water": "Drink Water",
 
   "message.pixlbows.drank_water": "Drank water!",
-  "message.pixlbows.no_water_nearby": "No water nearby!"
+  "message.pixlbows.no_water_nearby": "No water nearby!",
+  "message.pixlbows.removed_thirst": "Removed thirst"
 }

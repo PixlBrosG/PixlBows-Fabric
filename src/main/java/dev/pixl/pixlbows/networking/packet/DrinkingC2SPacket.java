@@ -1,5 +1,7 @@
 package dev.pixl.pixlbows.networking.packet;
 
+import dev.pixl.pixlbows.util.IEntityDataSaver;
+import dev.pixl.pixlbows.util.ThirstData;
 import net.fabricmc.fabric.api.networking.v1.PacketSender;
 import net.minecraft.block.Blocks;
 import net.minecraft.network.PacketByteBuf;
@@ -30,11 +32,20 @@ public class DrinkingC2SPacket
 					Style.EMPTY.withColor(Formatting.DARK_AQUA)), false);
 			world.playSound(null, player.getBlockPos(), SoundEvents.ENTITY_GENERIC_DRINK, SoundCategory.PLAYERS,
 					0.5f, world.random.nextFloat() * 0.1f + 0.9f);
+
+			ThirstData.addThirst((IEntityDataSaver)player, 1);
+			player.sendMessage(Text.literal("Thirst: " +
+					((IEntityDataSaver)player).getPersistentData().getInt("thirst")).fillStyle(
+							Style.EMPTY.withColor(Formatting.AQUA)), true);
 		}
 		else
 		{
 			player.sendMessage(Text.translatable(MESSAGE_NO_WATER_NEARBY).fillStyle(
 					Style.EMPTY.withColor(Formatting.RED)), false);
+
+			player.sendMessage(Text.literal("Thirst: " +
+					((IEntityDataSaver)player).getPersistentData().getInt("thirst")).fillStyle(
+							Style.EMPTY.withColor(Formatting.AQUA)), true);
 		}
 	}
 
